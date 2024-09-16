@@ -1,0 +1,45 @@
+<div class="container">
+  <!-- BANNER FOR NOVEMBER WORD CHALLENGE -->
+  <div class="row">
+    <button type="button" class="btn btn-info">November Word Challenge</button>
+  </div>
+  <br />
+  <div class="row">
+    <input
+      type="email"
+      id="inputEmail1"
+      aria-describedby="emailHelp"
+      placeholder="Enter email"
+      [(ngModel)]="formInputEmail"
+    />
+    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    <input
+      type="password"
+      id="inputPassword1"
+      placeholder="Password"
+      [(ngModel)]="formInputPassword"
+    />
+
+    <Button
+      size="lg"
+      type="submit"
+      class="btn btn-primary float-end"
+      (click)="login()"
+      >Submit</Button
+    >
+  </div>
+  <div class="row">
+    <div class="col-3 text-start">
+      <a>Forgot Password</a>
+    </div>
+    <div class="col-9 text-end">
+      <a> Register </a>
+    </div>
+  </div>
+</div>
+
+<!--
+    TODO: 
+    Create a button to register and login (this is last, since I dont really want to support storing user names and passwords)
+    For now, create a username/password form, that takes test user information, pass to login-service which does basic local check
+-->

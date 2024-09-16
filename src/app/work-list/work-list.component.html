@@ -1,0 +1,10 @@
+<div class="container d-grid text-end">
+  @for(work of work_list; track work.id) {
+  <button>{{ work.name }} {{ work.wordCount }}</button>
+  }
+</div>
+<!--TODO:
+    Add button to create new work (which will trigger a global popup with questions)
+    Get list of works by user id
+    display title + words written
+-->
